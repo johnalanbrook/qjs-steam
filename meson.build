@@ -32,7 +32,7 @@ steam_lib = library('steam',
   dependencies: [quickjs, steam_dep],
 )
 
-dep = declare_dependency(
+qjs_steam_dep = declare_dependency(
   link_with: steam_lib,
   include_directories : steam_inc
 )
