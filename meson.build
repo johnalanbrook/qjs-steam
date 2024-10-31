@@ -30,6 +30,7 @@ steam_lib = library('steam',
   include_directories: steam_inc,
   cpp_args: '-std=c++11',
   dependencies: [quickjs, steam_dep],
+  c_shared_args: '-DJS_SHARED_LIBRARY',
 )
 
 qjs_steam_dep = declare_dependency(
